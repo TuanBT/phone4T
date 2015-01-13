@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" href="../images/favicon.ico" />
-    <title><%=title%></title>
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <title><%= title %></title>
     <link href="../stylesheets/style.css" rel="stylesheet"/>
 </head>
 <body>
-abcde
+<form method="post" action="/">
+    <input type="text" name="form[text]">
+    <button type="submit">Button</button>
+</form>
 </body>
 </html>

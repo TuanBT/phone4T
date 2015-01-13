@@ -1,15 +1,16 @@
 {
-  "name": "Phone4T",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "3.3.4",
-    "ejs": "*",
-    "firebase":"*" ,
-    "simple-recaptcha":"*",
-    "JSONPath":"*"
-  }
+    "name": "Phone4T",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "3.3.4",
+        "ejs": "*",
+        "firebase": "*",
+        "simple-recaptcha": "*",
+        "JSONPath": "*",
+        "node-twilio": "*"
+    }
 }
