@@ -5,6 +5,7 @@ var Firebase = require('firebase');
 var ejs = require('ejs');
 var recaptcha = require('simple-recaptcha');
 
+var TwilioClient = require('node-twilio').Client;
 
 exports.index = function (req, res) {
     res.render('index', { title: 'Index' });
@@ -15,8 +16,7 @@ exports.postdata = function (req, res) {
 
     var accountSid = 'AC439137c82934e09c6e8120d9ee085b2b';
     var authToken = "b145152a0db201fe0e624f0205f66734";
-    var TwilioClient = require('node-twilio').Client;
-    var Twiml = require('node-twilio').Twiml;
+
     var client = new TwilioClient(accountSid, authToken, 'phone4t.herokuapp.com');
     numbers = '+84978754416';
     //message = 'I love you';
